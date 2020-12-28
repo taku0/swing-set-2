@@ -15,7 +15,7 @@ stdenv.mkDerivation rec {
     sha256 = "6c79bfe8bb06c82b72ef2f293a14becef56b3078d298dc75fda4225cbb2d3d0c";
   };
 
-  nativeBuildInputs = [ pkgs.unzip pkgs.jdk8 ];
+  nativeBuildInputs = [ pkgs.unzip pkgs.adoptopenjdk-hotspot-bin-8 ];
 
   buildPhase = ''
     unzip -d SwingSet2 ./demo/jfc/SwingSet2/src.zip
